@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navya's 22nd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lora:wght@400;600&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <nav class="section-nav">
+                <button class="nav-btn active" data-section="losing-it">losing it</button>
+                <button class="nav-btn" data-section="explore">explore</button>
+                <button class="nav-btn" data-section="stars">STARS</button>
+                <button class="nav-btn" data-section="more-stars">more stars</button>
+                <button class="nav-btn" data-section="blue">blue</button>
+            </nav>
+            <div class="header-right">
+                <div class="header-title">navya's 22nd</div>
+                <button class="star-mode-toggle" id="star-mode-toggle" title="Toggle Star Mode">
+                    ⭐
+                </button>
+                <div class="profile-icon" id="profile-icon">
+                    <img src="images/navya_profile.jpg" alt="Navya" onerror="this.style.display='none'; this.parentElement.innerHTML='👤';">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="masonry-container" id="masonry-container">
+            <!-- Images will be dynamically loaded here -->
+        </div>
+    </main>
+    
+    <!-- Star Mode Container -->
+    <div class="star-mode-container" id="star-mode-container"></div>
+
+    <!-- Image Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-header">
+            <button class="lightbox-download" id="lightbox-download" title="Download">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+            </button>
+            <span class="lightbox-close">&times;</span>
+        </div>
+        <div class="lightbox-image-container">
+            <img class="lightbox-content" id="lightbox-img">
+        </div>
+    </div>
+
+    <!-- Profile Magazine Modal -->
+    <div class="modal magazine-modal" id="profile-modal">
+        <span class="modal-close">&times;</span>
+        <div class="magazine-spread">
+            <!-- Left Page -->
+            <div class="magazine-page left-page">
+                <div class="magazine-header">
+                    <div class="magazine-masthead">
+                        <div class="magazine-logo">DTU TIMES</div>
+                        <div class="magazine-date">Special Edition • 22nd Birthday Issue</div>
+                    </div>
+                    <div class="magazine-decorative-line"></div>
+                </div>
+                
+                <div class="magazine-main-headline">
+                    <h1>NAVYA SINGH</h1>
+                    <p class="magazine-subheadline">A Portrait Through Friendship</p>
+                </div>
+                
+                <div class="magazine-photo-container">
+                    <img src="images/navya_profile.jpg" alt="Navya" class="magazine-main-photo" onerror="this.style.display='none';">
+                </div>
+                
+                <div class="magazine-content">
+                    <div class="magazine-column">
+                        <div class="magazine-section">
+                            <h3 class="magazine-section-title">From Friend One</h3>
+                            <p class="magazine-drop-cap">W</p>
+                            <p class="magazine-text">hen I think of Navya, I think of someone who brings light into every room she enters. As the Editor-in-Chief of DTU Times, she's shown incredible leadership and dedication, but what stands out most is her genuine care for the people around her.</p>
+                            
+                            <div class="magazine-pull-quote">
+                                <p>"She has this incredible ability to make everyone feel heard and valued."</p>
+                            </div>
+                            
+                            <p class="magazine-text">Her passion for storytelling isn't just professional—it's personal. She remembers the little things, celebrates your wins as if they were her own, and has this infectious energy that makes even the most mundane moments feel special.</p>
+                            
+                            <p class="magazine-text">Whether it's late-night editing sessions, impromptu coffee runs, or those deep conversations that stretch into the early hours, Navya has a way of making every interaction meaningful. She's the friend who shows up—not just physically, but emotionally, mentally, and with her whole heart.</p>
+                        </div>
+                        
+                        <div class="magazine-section">
+                            <h3 class="magazine-section-title">Favorite Memories</h3>
+                            <ul class="magazine-list">
+                                <li>Those spontaneous road trips where we got lost but found the best stories</li>
+                                <li>Late-night deadline crunches that turned into bonding sessions</li>
+                                <li>Celebrating every small victory together</li>
+                                <li>Those moments of quiet understanding that needed no words</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="magazine-footer">
+                    <div class="magazine-page-number">1</div>
+                </div>
+            </div>
+            
+            <!-- Right Page -->
+            <div class="magazine-page right-page">
+                <div class="magazine-content">
+                    <div class="magazine-column">
+                        <div class="magazine-section">
+                            <h3 class="magazine-section-title">From Friend Two</h3>
+                            <p class="magazine-drop-cap">T</p>
+                            <p class="magazine-text">here's something magnetic about Navya. Maybe it's her unwavering commitment to excellence, or perhaps it's the way she balances ambition with authenticity. As someone who's watched her grow into the incredible leader she is today, I'm constantly in awe.</p>
+                            
+                            <div class="magazine-pull-quote right-quote">
+                                <p>"She doesn't just lead—she inspires. And that's what makes her truly special."</p>
+                            </div>
+                            
+                            <p class="magazine-text">Navya has this rare combination of being both incredibly driven and deeply empathetic. She pushes boundaries professionally while never losing sight of what matters most: the people in her life. Her editorial vision at DTU Times reflects this—stories that matter, voices that need to be heard, and a commitment to truth and authenticity.</p>
+                            
+                            <p class="magazine-text">But beyond the editor's desk, Navya is the friend who remembers your favorite coffee order, who texts you random memes at 2 AM, who celebrates your achievements louder than you do, and who's there with tissues and ice cream when things get tough.</p>
+                        </div>
+                        
+                        <div class="magazine-section">
+                            <h3 class="magazine-section-title">What Makes Her Special</h3>
+                            <div class="magazine-highlight-box">
+                                <p><strong>Her Leadership:</strong> She doesn't just manage—she mentors, empowers, and elevates everyone around her.</p>
+                                <p><strong>Her Heart:</strong> Genuine, kind, and always ready to support those she cares about.</p>
+                                <p><strong>Her Vision:</strong> She sees possibilities where others see obstacles.</p>
+                                <p><strong>Her Laugh:</strong> Contagious and genuine—it's impossible not to smile when she does.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="magazine-section">
+                            <h3 class="magazine-section-title">A Birthday Wish</h3>
+                            <p class="magazine-text">As you turn 22, Navya, we wish you a year filled with:</p>
+                            <ul class="magazine-list">
+                                <li>Dreams that come true and new ones that inspire you</li>
+                                <li>Adventures that become stories you'll tell for years</li>
+                                <li>Moments of quiet joy and loud celebrations</li>
+                                <li>Love, laughter, and all the stars in the sky</li>
+                            </ul>
+                            
+                            <p class="magazine-text signature-text">You've given us so much—your friendship, your leadership, your light. Here's to another year of being absolutely, unapologetically, wonderfully you.</p>
+                            
+                            <p class="magazine-text signature-text"><strong>With all our love,</strong><br>Your Friends 💙</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="magazine-footer">
+                    <div class="magazine-page-number">2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Birthday Message Button -->
+    <button class="help-btn" id="help-btn">
+        <div class="note-icon">
+            <div class="note-paper"></div>
+        </div>
+    </button>
+    <div class="birthday-message" id="birthday-message">
+        <div class="birthday-content">
+            <span class="birthday-close">&times;</span>
+            <h2>🎉 Happy 22nd Birthday, Navya! 🎉</h2>
+            <p>Wishing you the most amazing year filled with love, laughter, and all your dreams coming true! You deserve all the happiness in the world. Here's to another year of being absolutely incredible! ✨🌟</p>
+            <p class="birthday-signature">With all my love 💙</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
