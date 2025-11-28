@@ -79,6 +79,27 @@ header {
     letter-spacing: 0.5px;
 }
 
+.merch-btn {
+    background: transparent;
+    border: 2px solid #001b48;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.merch-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 27, 72, 0.4);
+    background: #fff0f5;
+}
+
 .star-mode-toggle {
     background: transparent;
     border: 2px solid #001b48;
@@ -895,5 +916,207 @@ body.star-mode .star-mode-container {
     font-style: italic;
     color: #001b48;
     font-weight: 600;
+}
+
+/* Merch Store Styles */
+.merch-modal {
+    padding: 20px;
+}
+
+.merch-container {
+    background: white;
+    border-radius: 16px;
+    max-width: 1200px;
+    margin: 2% auto;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.merch-header {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 20px 30px;
+    border-bottom: 2px solid #001b48;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    border-radius: 16px 16px 0 0;
+}
+
+.merch-header h2 {
+    color: #001b48;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.merch-cart-info {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.cart-btn {
+    background: #001b48;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.cart-btn:hover {
+    background: #002d6b;
+    transform: scale(1.05);
+}
+
+.cart-btn #cart-count {
+    background: #ffd700;
+    color: #001b48;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.print-receipt-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.print-receipt-btn:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+.merch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.merch-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+}
+
+.merch-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.merch-card-image {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    background: #f5f5f5;
+    display: block;
+}
+
+.merch-card-content {
+    padding: 16px;
+}
+
+.merch-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.merch-card-designer {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.merch-card-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #001b48;
+    margin-bottom: 12px;
+}
+
+.add-to-cart-btn {
+    width: 100%;
+    background: #001b48;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background: #002d6b;
+    transform: scale(1.02);
+}
+
+.add-to-cart-btn:active {
+    transform: scale(0.98);
+}
+
+.add-to-cart-btn.added {
+    background: #28a745;
+}
+
+.add-to-cart-btn.added:hover {
+    background: #218838;
+}
+
+/* Print Receipt Styles */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    
+    .receipt-content, .receipt-content * {
+        visibility: visible;
+    }
+    
+    .receipt-content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: white;
+        padding: 40px;
+    }
+    
+    .merch-modal, .merch-header, .merch-grid {
+        display: none;
+    }
 }
 
