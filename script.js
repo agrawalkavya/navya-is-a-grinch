@@ -369,22 +369,22 @@ function clearStars() {
 // 20 items total (3.png through 22.png)
 // Descriptions will be added by user
 const merchItems = [
-    { id: 3, name: "designed by navya", description: "designed by navya", image: "merch-store/3.png", price: 0 },
-    { id: 4, name: "designed for khuntia", description: "designed for khuntia", image: "merch-store/4.png", price: 0 },
-    { id: 5, name: "designed for kavya", description: "designed for kavya", image: "merch-store/5.png", price: 0 },
-    { id: 6, name: "conrad baby", description: "conrad baby", image: "merch-store/6.png", price: 0 },
-    { id: 7, name: "designed for road rage", description: "designed for road rage", image: "merch-store/7.png", price: 0 },
-    { id: 8, name: "designed for kavya", description: "designed for kavya", image: "merch-store/8.png", price: 0 },
-    { id: 9, name: "designed for times ke bache (mostly kavya)", description: "designed for times ke bache (mostly kavya)", image: "merch-store/9.png", price: 0 },
-    { id: 10, name: "designed for everyday use", description: "designed for everyday use", image: "merch-store/10.png", price: 0 },
-    { id: 11, name: "designed by arima", description: "designed by arima", image: "merch-store/11.png", price: 0 },
-    { id: 12, name: "designed for beloved creatures", description: "designed for beloved creatures", image: "merch-store/12.png", price: 0 },
-    { id: 13, name: "designed for arima", description: "designed for arima", image: "merch-store/13.png", price: 0 },
-    { id: 14, name: "designed by ritwij", description: "designed by ritwij", image: "merch-store/14.png", price: 0 },
-    { id: 15, name: "designed by ritwij", description: "designed by ritwij", image: "merch-store/15.png", price: 0 },
-    { id: 16, name: "designed by ritwij", description: "designed by ritwij", image: "merch-store/16.png", price: 0 },
-    { id: 17, name: "designed by ritwij", description: "designed by ritwij", image: "merch-store/17.png", price: 0 },
-    { id: 18, name: "designed by ritwij", description: "designed by ritwij", image: "merch-store/18.png", price: 0 }
+    { id: 3, name: "designed by navya", description: "designed by navya", image: "merch-store/3.png", price: 69.69 },
+    { id: 4, name: "designed for khuntia", description: "designed for khuntia", image: "merch-store/4.png", price: 69.69 },
+    { id: 5, name: "designed for kavya", description: "designed for kavya", image: "merch-store/5.png", price: 69.69 },
+    { id: 6, name: "conrad baby", description: "conrad baby", image: "merch-store/6.png", price: 69.69 },
+    { id: 7, name: "designed for road rage", description: "designed for road rage", image: "merch-store/7.png", price: 69.69 },
+    { id: 8, name: "designed for kavya", description: "designed for kavya", image: "merch-store/8.png", price: 69.69 },
+    { id: 9, name: "designed for times ke bache (mostly kavya)", description: "designed for times ke bache (mostly kavya)", image: "merch-store/9.png", price: 69.69 },
+    { id: 10, name: "designed for everyday use", description: "designed for everyday use", image: "merch-store/10.png", price: 69.69 },
+    { id: 11, name: "designed by arima", description: "designed by arima", image: "merch-store/11.png", price: 69.69 },
+    { id: 12, name: "designed for beloved creatures", description: "designed for beloved creatures", image: "merch-store/12.png", price: 69.69 },
+    { id: 13, name: "designed for arima", description: "designed for arima", image: "merch-store/13.png", price: 69.69 },
+    { id: 14, name: "designed by ritwij", description: "designed by ritwij", image: "merch-store/14.png", price: 69.69 },
+    { id: 15, name: "designed by ritwij", description: "designed by ritwij", image: "merch-store/15.png", price: 69.69 },
+    { id: 16, name: "designed by ritwij", description: "designed by ritwij", image: "merch-store/16.png", price: 69.69 },
+    { id: 17, name: "designed by ritwij", description: "designed by ritwij", image: "merch-store/17.png", price: 69.69 },
+    { id: 18, name: "designed by ritwij", description: "designed by ritwij", image: "merch-store/18.png", price: 69.69 }
 ];
 
 function setupMerchStore() {
