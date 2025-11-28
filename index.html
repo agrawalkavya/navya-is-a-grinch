@@ -13,14 +13,15 @@
     <header>
         <div class="header-content">
             <nav class="section-nav">
-                <button class="nav-btn active" data-section="losing-it">losing it</button>
-                <button class="nav-btn" data-section="explore">explore</button>
-                <button class="nav-btn" data-section="stars">STARS</button>
-                <button class="nav-btn" data-section="more-stars">more stars</button>
-                <button class="nav-btn" data-section="blue">blue</button>
+                <button class="nav-btn active" data-section="losing-it">your fav</button>
+                <button class="nav-btn" data-section="explore">stars</button>
+                <button class="nav-btn" data-section="stars">coffee</button>
+                <button class="nav-btn" data-section="more-stars">crashing out</button>
+                <button class="nav-btn" data-section="blue">misc.</button>
             </nav>
             <div class="header-right">
                 <div class="header-title">navya's 22nd</div>
+                <button class="merch-btn" id="merch-btn" title="Merch Store">🛍️</button>
                 <button class="star-mode-toggle" id="star-mode-toggle" title="Toggle Star Mode">
                     ⭐
                 </button>
@@ -165,6 +166,25 @@
         </div>
     </div>
 
+    <!-- Merch Store Modal -->
+    <div class="modal merch-modal" id="merch-modal">
+        <div class="merch-container">
+            <div class="merch-header">
+                <h2>Navya's Merch Store</h2>
+                <div class="merch-cart-info">
+                    <button class="cart-btn" id="cart-btn">
+                        🛒 <span id="cart-count">0</span>
+                    </button>
+                    <button class="print-receipt-btn" id="print-receipt-btn" style="display: none;">Print Receipt</button>
+                </div>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="merch-grid" id="merch-grid">
+                <!-- Merch items will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
     <!-- Birthday Message Button -->
     <button class="help-btn" id="help-btn">
         <div class="note-icon">
@@ -175,8 +195,8 @@
         <div class="birthday-content">
             <span class="birthday-close">&times;</span>
             <h2>🎉 Happy 22nd Birthday, Navya! 🎉</h2>
-            <p>Wishing you the most amazing year filled with love, laughter, and all your dreams coming true! You deserve all the happiness in the world. Here's to another year of being absolutely incredible! ✨🌟</p>
-            <p class="birthday-signature">With all my love 💙</p>
+            <p>happy birthday to our little boss baby,</p>
+            <p>there is no one else in the world who can scare the shit out of us and make us die from laughter on an hourly basis. can't think of the last twelve months without thinking about the three of us. we hope you have the best one our little grinch.</p>
         </div>
     </div>
 
