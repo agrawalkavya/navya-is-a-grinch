@@ -380,15 +380,11 @@ const merchItems = [
     { id: 11, name: "designed by arima", description: "designed by arima", image: "merch-store/11.png", price: 0 },
     { id: 12, name: "designed for beloved creatures", description: "designed for beloved creatures", image: "merch-store/12.png", price: 0 },
     { id: 13, name: "designed for arima", description: "designed for arima", image: "merch-store/13.png", price: 0 },
-    { id: 14, name: "Description will be added", description: "Description will be added", image: "merch-store/14.png", price: 0 },
-    { id: 15, name: "Description will be added", description: "Description will be added", image: "merch-store/15.png", price: 0 },
-    { id: 16, name: "Description will be added", description: "Description will be added", image: "merch-store/16.png", price: 0 },
-    { id: 17, name: "Description will be added", description: "Description will be added", image: "merch-store/17.png", price: 0 },
-    { id: 18, name: "Description will be added", description: "Description will be added", image: "merch-store/18.png", price: 0 },
-    { id: 19, name: "Description will be added", description: "Description will be added", image: "merch-store/19.png", price: 0 },
-    { id: 20, name: "Description will be added", description: "Description will be added", image: "merch-store/20.png", price: 0 },
-    { id: 21, name: "Description will be added", description: "Description will be added", image: "merch-store/21.png", price: 0 },
-    { id: 22, name: "Description will be added", description: "Description will be added", image: "merch-store/22.png", price: 0 }
+    { id: 14, name: "designed by ritwij", description: "designed by ritwij", image: "merch-store/14.png", price: 0 },
+    { id: 15, name: "designed by ritwij", description: "designed by ritwij", image: "merch-store/15.png", price: 0 },
+    { id: 16, name: "designed by ritwij", description: "designed by ritwij", image: "merch-store/16.png", price: 0 },
+    { id: 17, name: "designed by ritwij", description: "designed by ritwij", image: "merch-store/17.png", price: 0 },
+    { id: 18, name: "designed by ritwij", description: "designed by ritwij", image: "merch-store/18.png", price: 0 }
 ];
 
 function setupMerchStore() {
