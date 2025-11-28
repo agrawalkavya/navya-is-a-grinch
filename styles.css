@@ -604,6 +604,17 @@ body.star-mode .star-mode-container {
     border-radius: 4px;
 }
 
+.magazine-content-photo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 3px solid #001b48;
+    box-shadow: 0 6px 16px rgba(0, 27, 72, 0.25);
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;
+}
+
 .magazine-content {
     margin-top: 30px;
 }
